@@ -17,10 +17,7 @@ class SplashScreen extends StatelessWidget {
         child: Text(
           'Welcome to Todo Notes',
           style: TextStyle(
-            // decorationStyle: TextDecorationStyle.dashed,
-            // decoration: TextDecoration.underline,
             fontSize: 32,
-            // fontWeight: FontWeight.bold,
             color: Colors.black,
             letterSpacing: 1.5,
             fontFamily: 'serrif',

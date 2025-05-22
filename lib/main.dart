@@ -29,7 +29,6 @@ class MyHomePage extends StatefulWidget {
 class _MyHomePageState extends State<MyHomePage> {
   int _selectedIndex = 0;
 
-  // final List<Widget> _screens = const [MyTodoScreen(), MyNoteScreen()];
   final List<Widget> _screens = [
     const KeyedSubtree(key: ValueKey('todo'), child: MyTodoScreen()),
     const KeyedSubtree(key: ValueKey('notes'), child: MyNoteScreen()),
@@ -44,7 +43,6 @@ class _MyHomePageState extends State<MyHomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      // appBar: AppBar(centerTitle: true, title: Text("Flutter Demo")),
       body: AnimatedSwitcher(
         duration: Duration(milliseconds: 300),
         child: _screens[_selectedIndex],
