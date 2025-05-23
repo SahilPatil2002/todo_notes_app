@@ -69,11 +69,9 @@ class _MyTodoScreenState extends State<MyTodoScreen> {
     final Color primaryColor = Colors.black;
 
     return Scaffold(
-      backgroundColor: Colors.grey[100],
       appBar: AppBar(
-        title: Text("My TO-DO List", style: TextStyle(color: Colors.white)),
+        title: Text("My TO-DO List", style: TextStyle(color: Colors.black, fontWeight: FontWeight.bold)),
         centerTitle: true,
-        backgroundColor: primaryColor,
       ),
       body: Column(
         children: [
@@ -116,7 +114,7 @@ class _MyTodoScreenState extends State<MyTodoScreen> {
                       color: primaryColor,
                     ),
                     child: IconButton(
-                      icon: const Icon(Icons.add, color: Colors.white),
+                      icon:  Icon(Icons.add, color: Colors.white),
                       onPressed: addTask,
                     ),
                   ),
@@ -129,9 +127,9 @@ class _MyTodoScreenState extends State<MyTodoScreen> {
                 tasks.isEmpty
                     ? const Center(
                       child: Text(
-                        "No todos yet!",
+                        "To-do list is empty!",
                         style: TextStyle(
-                          fontSize: 22,
+                          fontSize: 18,
                           fontWeight: FontWeight.w500,
                         ),
                       ),
